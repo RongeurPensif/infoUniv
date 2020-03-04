@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+	<link rel="stylesheet" href="style.css"/>
+      <title>Ex1</title>
+      <meta charset="utf-8">
+	  
+	  
+    </head>
+    
+	<body>	
+	<header>
+<div class="logo"><img src="logo.bmp" alt="logo"/></div>
+<nav>
+<ul>
+<li>catalogue des produits</li>
+<li>promotions du moment</li>
+<li>service après vente</li>
+<li>contact</li>
+</ul>
+</nav>
+<div class="icone"><img src="img.bmp" alt="icone"  usemap="#logo" />
+</div>
+  <map name="logo">
+    <area shape="rect" coords="0,0,40,51" href="http://google.com/"/>
+    <area shape="rect" coords= "41,0,81,51" href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&cad=rja&uact=8&ved=2ahUKEwiega7d1ZPlAhUJahQKHdPKCEgQFjAAegQICRAC&url=https%3A%2F%2Fwww.google.com%2Fgmail%2F&usg=AOvVaw3mZ_qbD_gQyp_sqkjrwStn"/>
+    <area shape="rect" coords="82,0,122,51" href="https://twitter.com/?lang=fr"/>
+    <area shape="rect" coords="123,0,163,51" href="http://facebook.com/"/>
+    <area shape="rect" coords="164,0,204,51" title="site fermée"/>
+    <area shape="rect" coords="205,0,245,51" href="https://github.com/"/>
+  </map>
+</header>  
+	<aside>
+	<article class="bulle"><h5>Promotion Apple !</h5><div class="image"><img src="mac.jpg" alt="mac.jpg"></div><p><strong>Apple MacBook Pro 13,3'' LED 500 Go 4 Go RAM Intel Core i5 bicœur à 2,5 GHz SuperDrive MD101. A partir de 1000 Euros. </strong></p></article>
+		<article class="bulle"><h5>Arrivage disques durs</h5><div class="image"><img src="dd.jpg" alt="disqueDur"></div><p><strong>Arrivage de plusieurs 2To Western Digital, Lacie, Maxtor. Garantie 2 ans et éxtensible à 5 ans. 149,90 Euros. </strong></p></article>
+		<article class="bulle"><h5>Destockage clé usb</h5><div class="image"><img src="cleusb.jpg" alt="cleusb"></div><p><strong>Promotion du moment : une clé USB offerte pour tout achat supérieur à 100 Euros. Saisir le code PXSDEZSC. </strong></p></article>
+		<article class="bulle"><h5>-30% sur les cartes SD</h5><div class="image"><img src="sd.jpg" alt="sd"></div><p><strong>Toutes nos cartes SD et micro SD sont affichées à -30%. Plusieurs granques marques disponibles : Kingstom, sanDisk, Samsung. </strong></p></article>
+	</aside>   
+<div class="central">
+
+<form method="post">
+<fieldset>
+<legend>Information personnelles</legend>
+<p><label for="fName">Prénom : </label>
+<input type="text" id="fName"/></p>
+<p><label for="name">Nom : </label>
+<input type="text" id="name"/></p>
+<p><label for="sex">Sexe : </label>
+<input type="text" id="sex"/></p>
+<p><label for="bDay">date de naissance : </label>
+<input type="text" id="bDay" placeholder="DD/MM/YYYY"/></p>
+<p><label for="adress">Adresse : </label>
+<input type="text" id="adress"/></p>
+<p><label for="zip">Code postal</label>
+<input type="number" id="zip"></p>
+<p><label for="town">Ville : </label>
+<input type="text" id="town"/></p>
+<p><label for="country">Pays : </label>
+<input type="text" id="country"/></p>
+</fieldset>
+<fieldset>
+<legend>Compte</legend>
+<p><label for="id">Identifiant : </label>
+<input type="text" id="id"/></p>
+<p><label for="pWord">Mot de passe : </label>
+<input type="text" id="pWord"/></p>
+<p><label for="mail">Adresse email : </label>
+<input type="text" id="mail"/></p>
+<p><label for="secret">Question secrète : </label>
+<input type="text" id="secret"/></p>
+<p><label for="answer">Réponse : </label>
+<input type="text" id="answer"/></p>
+</fieldset>
+<p>
+<label class="pas_de_style">&nbsp</label>
+<input type="submit" value="Envoyer" /><input type="reset" value="Effacer">
+</p>
+
+</form>
+</div>    
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+1) Télécharger depuis Celene tdM1
+2) Lancer emacs en ouvrant un fichier _.ml
+
+Dans les languages fonctionnelle tout est évaluable
+
+Pour envoyer un erreur en ocaml : 
+	failwith "messageErreur"
+
+fsd et snd 
+	fsd & snd ne fonctionne que sur des couples
+	fst : donne la premiere composante d'un couple
+	snd : donne la seconde composante d'un couple
+
+	Ex : 
+	let f = fun (n,(x,y))
+	fst (snd (n,(x,y))) renvoi x 
+
+Operareur logique
+	ou : ||
+Concaténation
+	^
+
+généralement infix = écrite entre les deux argument
+
+notation préfixe = entre parenthèse

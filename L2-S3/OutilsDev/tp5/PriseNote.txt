@@ -1,0 +1,58 @@
+10/12/2019
+12:01
+#! veut dire que c'est un script qu'il faut exécuter avec un interpreteur
+/bin/bash est le liens vers l'interpreteur
+
+$(()) permet de faire des opérations mathématiques
+exemple $((varaible+1))
+
+avec + prend les dernière ligne à partir de la ligne x
+tail -n2
+tail -n +4
+2.a
+3.b
+---
+4.c
+5.d
+
+set -v  : permet de voir toute les lignes qui sont éxuctée
+
+[.] expression regulière où le point est considéré comme un caractère quelquonque
+
+sed est utiliser pour faire des remplacements 
+sed 'commande' (commance= (action)/motif/resultat)
+(e)grep : cherche toute les occurences dans un texte 
+/g : remplace toute les occurences d'un motif même si il y en a plusieurs  par ligne
+/p : affiche les ligne qui ont été modifée
+/d : supprime
+-n : pas de sortie
+sed-n '/motif/p' =)> affiche les occurences du motif
+sed 's/motif/remp/' => remplace le motif par remp
+
+
+correction controle OutilsDev
+	01.755  = rwxr-xr-x
+	02. ls-l data | tr -s ''|cut -d' ' -f3,5,9|sort -nk 2 (n numerique; k rang du champs)
+	03. date|tr -s ' '|cut -d' ' -f3
+	04. find- type f data | wc -l
+	05. find -type d data | xargs chmod og-x
+	06. #!bin/bash;heure=$(date|cut tr -s ' '| cut -d ' ' -f5);h=$(echo $heure|cut -d':' -f 1); m=...;s=..;echo "il est $h heure..."
+	07. #!bin/bash;i=0;while read ligne; do; if [$i -eq 10 ]; then; break else; i = $((i+1)); echo $ligne; fi; done < poeme.txt
+	08. #!bin/bash; nb1=$(find -type f -maxdepth - wc -l); nb2=$(find...);if [ $nb1 -gt $nb2 ]; then; echo 'data1'; elif [ $nb1 -lt $nb2 ]; then echo "data2"; else; echo "egaux";fi
+	09.read n; if [ $n -lt 0]; then; echo 'n<0';elif [$m -eq 0 ]; then; echo 'm =0'; else; seq $n; fi
+
+exo * find 
+___________________
+
+Arguments ( colonne, listeElement )
+sortie = "<table>"
+ligne = "<tr>"
+Pour i allant de 0 à longeur (listeElement) -1 :
+	Si ( i + 1 ) % colonne != 0 :
+		ligne = ligne + "<td>" + listeElement [ i ] + "</td>"
+	Sinon :
+		ligne= ligne + "</tr>"
+		sortie = sortie + ligne
+		ligne = "<tr>"
+sortie = sortie + "</table>"
+

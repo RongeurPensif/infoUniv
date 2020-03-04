@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+    <title>Ma page</title>
+    <meta charset="utf-8">
+	<style>
+tr .titre {
+	box-shadow:0pt 2px 5px rgba(105, 108, 109, 0.7),0px 0px 8px 5px rgba(208, 223, 226, 0.4) inset;
+}
+table {
+	text-align:center;border-style:collapse;
+}
+tr:nth-child(even) { 
+	color: red;
+} 
+tr:nth-child(odd) {
+	color: blue ;
+}
+
+</style>
+    </head>
+    <body>
+	<table>
+<tr><th>Nom</th><th>Prénom</th><th>Filière</th><th>Moyenne</th><th>Mention</th></tr>
+		<tr><td>Dupont</td><td>Michel</td><td>L2 Info</td><td>13,33</td><td>Assez bien</td></tr>
+<tr><td>Martin</td><td>Thomas</td><td>L3 Ing</td><td>14,25</td><td>Bien</td></tr>
+<tr><td>Michel</td><td>Eric</td><td>M1 Info</td><td>13,66</td><td>Assez bien</td></tr>
+<tr><td>Marcus</td><td>David</td><td>M1 Miage</td><td>14,10</td><td>Bien</td></tr>
+<tr><td>Remi</td><td>Michel</td><td>M2 Inis</td><td>14,66</td><td>Bien</td></tr>
+<tr class="titre"><th colspan="5">Liste des étudiants avec mention</th></tr>
+	</table>
+    </body>
+</html>
+
+

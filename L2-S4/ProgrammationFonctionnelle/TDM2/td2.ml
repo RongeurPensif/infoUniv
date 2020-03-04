@@ -1,0 +1,61 @@
+(*Exercice 1*)
+let rec produit =
+  fun n ->
+  if n < 10 then
+    n
+  else
+    (n mod 10) * produit(n/10);;
+
+produit 234;;
+
+let rec produit' =
+  fun n ->
+  if n < 10 then
+    n
+  else
+    let i = n mod 10 in
+    if i = 0 then
+      0
+    else i * produit' (n/10);;
+#trace produit';;
+produit' 2304;;
+
+(*Exercice 2*)
+let rec ordonnancer = fun n ->
+  let rec placer = fun chiffre v ->
+		   if chiffre >= (v mod 10) then v * 10 + chiffre
+		   else (placer chiffre (v/10)) * 10 + v mod 10
+  in
+  if n < 10 then n
+  else let x = ordonnancer (n/10)
+       in placer (n mod 10) x ;;
+
+(*Exercice 3*)
+let rec rep = fun n s -> 
+  if n < 1 then
+    if n = 1 then
+      s 
+    else
+      ""
+  else
+    (rep (n-1) s) ^ s;;
+rep 3 "la"
+
+(*Exercice 4*)
+let rec sablier =
+  fun s ->
+  let rec blanc = fun n ->
+    if n = 0 then "" else " " ^ blanc (n-1)
+  in 
+  let rec aux = fun s i ->
+    let lg = String.lenght s in
+    if lg = 1 || lg = 2 then (blanc i) ^ s
+    else (blanc i)^s s"\n" ^
+	   aux (String.sub s 1 (lg-2))) (i+1) ^"\n" ^ (blanc i) ^s
+					in if s = "" then print_newline()
+					   else begin print_newline(); print_string(aux s 0); print_newline()
+end;;
+
+(*Exercice 6*)
+
+let rec string_split = fun s s' ->

@@ -1,0 +1,7 @@
+grep'<expression regulière>' fichier
+'[a b z ]' pour avoir les lignes qui contiennent a ou b ou z ou espace 
+'[]*' plusieurs fois
+'^a' ligne qui commence par un a
+'a$' ligne qui se termine par un a
+
+0d <=> \r  (cariage return)

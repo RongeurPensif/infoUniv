@@ -1,0 +1,22 @@
+Ex 1 :
+produit 234 = -:int=24
+
+tracer une fonction
+	La prochaine qu'on appllique la fonction, ça affiche les étapes
+	# trace nomFonction
+
+Exo 2 :
+Ecrire une fonction a dans une fonction b
+let codeFunctionB in codeFonctionA;;
+
+Ex 6 :
+let string_split = fun s s' -> String.split_on_char s'.[0] ;;
+
+Utiliser une fonction auxiliaire
+
+si i = longueur(s) alors :
+	[s]
+sinon si s.[i] = c alors :
+	String.sub s 0 i :: aux (String.sub s (i+1) )
+sinon aux s (i+1) c
+	

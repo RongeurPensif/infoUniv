@@ -1,0 +1,13 @@
+Revoir cours sur le positionnement
+
+. => class
+# => id
+
+margin (= marge intérieur).padding(=marge extérieur)
+
+Firefox outils developpement / inspecteur
+
+
+:not
+
+blank != , 

@@ -1,0 +1,142 @@
+html, body {
+height:100%;
+width:100%;
+margin:0%;
+padding:0%;
+}
+body {
+background: #F1F4F9;
+}
+p {
+text-align:middle;
+}
+h5{color:#ACC0D7;
+ font-size:15px;
+ margin-left:15px;
+ margin-top:15px;
+   }
+strong{
+font-size:15px;
+color:#414A51;
+}
+header, footer {
+background:#09C;
+height:13%;
+width:100%;
+  }
+div.logo  {
+margin-left:8%;
+}
+ul {
+width:100%;
+margin-left:8%;
+margin-right:0px;
+margin-bottom:0px;
+margin-top:0px;
+padding:0px;
+    }
+li { list-style-type: none;
+color:#FFF;
+font-family : Comic Sans MS;
+font-size:14px;
+font-style : bold;
+  }
+li:hover{
+color:#2D3E4A;}
+li::after {
+content:".";
+font-size:20px;
+color:#237DAC;
+margin:15px;
+}
+div.icone{
+margin-left:6%;
+}
+.logo, .icone, nav, ul, li   { 
+display:inline-block;
+vertical-align: middle;
+ }
+aside {
+position:absolute;
+right:5%;
+width:24%;
+margin-top:20%;
+max-height:328px;
+}
+.bulle{
+background:#FFF;
+border-style:solid;
+border-width:1px;
+border-color:#F1F4F9;
+color:#414A51;
+border-radius:10px;
+padding-right:20px;
+padding-bottom:20px;
+margin-bottom:30px;
+}
+article > h5 {
+color:#ACC0D7;
+font-size:15px;
+}
+div.image { 
+float:left;
+margin : 10 px;
+}
+div.central {
+backgroud:#FFF;
+margin-left:8%;
+padding-top:3%;
+width:60%;
+}
+form {
+margin:auto;
+width:75%;
+}
+fielset {
+background:rgb(247,247,247);
+border-radius:5px;
+margin:10px;
+border-style:solid;
+border-color:#CCC;
+border-width:1px;
+}
+fieldset:hover{box-shadow:0pt 2px 5px rgba(105, 108, 109, 0.7), 0px 0px 8px 5px
+rgba(208, 223, 226, 0.4) inset;
+}
+fieldset legend {
+padding:0px 10px;
+color:#237DAC;
+border-left-color:#CCC;
+border-left-style:solid;
+border-right-style:solid;
+border-right-color:#CCC;
+border-left-style:1px;
+border-right-style:1px;
+}
+
+label {
+background-color:#09C;
+color:#FFF;
+display:block;
+width:39%;
+float:left;
+padding-right:1%;
+padding-top:1%;
+padding-bottom:1%;
+margin-left:4%;
+text-align:right;
+letter-spacing:1px;
+}
+label:not([class="pas_de_style"]){
+background:#09C;
+border-radius:3px;
+}
+label:hover{
+font-style:bold;
+}
+input{
+border-radius:3px;
+}
+label.pas_de_style{
+background:none;
+}

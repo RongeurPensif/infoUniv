@@ -1,0 +1,23 @@
+NE MODIFIER QUE TP-ROBOT.PY
+Pour executer le programme,
+ouvrir un terminal où est le fichier python3 tp-robot.py
+
+1) Quels sont les coordonées des quatres voisins étant donné une posision (i,j)
+
+
+def voisins ( G, pos ) :
+	r = []
+	for x in ( 1, 0, -1 ):
+		for y in ( 1, 0, -1 ) :
+			if ( 
+				( x, y ).count( 0 ) == 1  
+				and ( 
+					pos [ 0 ] + x >= 0 
+					and pos [ 0 ] + x <= len(G)-1 
+					and pos [ 0 ] + y >= 0 
+					and pos [ 0 ] + y <= len ( G [ 0 ] ) - 1 
+				) 
+				and G [ pos [ 0 ] + x ] [ pos [ 1 ] + y ] != "wall"
+			)
+				r.append( ( pos [ 0 ] + x, pos [ 1 ] + y ) )
+	return r

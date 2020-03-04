@@ -1,0 +1,1 @@
+egrep -n '^(Acte|Scene|Rideau)' cyrano.txt
